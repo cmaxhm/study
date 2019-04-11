@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>Sticky content</title>
+  
+    <style>
+      #sticky-container {
+        height: 72px;
+      }
+      
+      #sticky {
+        background: #dfdfdf;
+      }
+      
+      .sticky {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container py-4">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquam at atque consectetur consequuntur debitis dolor doloremque eius id inventore magni, nemo omnis ratione reprehenderit sapiente sequi suscipit tenetur voluptas!
+        </p>
+      </div>
+    </header>
+    <div id="sticky-container">
+      <div id="sticky">
+        <div class="container py-4">
+          I'm the sticky content
+        </div>
+      </div>
+    </div>
+    <div class="container py-4">
+      <div class="row">
+        <div class="col-sm-12">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac lorem a augue rutrum rhoncus sit amet sed sapien. Nulla eu purus nec orci dignissim eleifend. Nulla facilisi. Ut lorem nisi, vulputate in tempus id, dignissim non justo. Sed porttitor viverra diam, vel elementum libero pulvinar vel. Praesent ullamcorper iaculis pharetra. Integer ac dolor erat.
+          </p>
+          <p>
+            Quisque eget fermentum tortor. Proin feugiat tristique magna sit amet eleifend. Mauris urna nibh, lacinia id dui sit amet, placerat mattis urna. Sed interdum laoreet elit sed posuere. Suspendisse in urna finibus, egestas odio eu, gravida nunc. Duis dapibus malesuada purus non finibus. Praesent at nisi dictum, suscipit libero nec, laoreet velit.
+          </p>
+          <p>
+            Vestibulum dignissim lorem dolor, ac dictum mi lobortis sit amet. Cras rhoncus ut nisi at eleifend. Pellentesque et elit purus. Suspendisse felis mauris, faucibus vel tortor et, interdum laoreet tortor. Fusce gravida nisi ipsum, ut consectetur nulla venenatis nec. Praesent facilisis, lectus vel porta pellentesque, elit mi fringilla odio, at vestibulum risus velit id justo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce a posuere quam. Suspendisse a tincidunt nunc. In velit nibh, venenatis et tempus et, vehicula a neque. Curabitur pharetra mi eu leo blandit laoreet.
+          </p>
+          <p>
+            Vestibulum iaculis non erat id volutpat. Nullam accumsan purus non arcu imperdiet luctus. In non lobortis lectus. Sed feugiat, lectus et viverra tempor, ligula tortor egestas lorem, vitae efficitur nunc dolor consequat ex. Aliquam mattis purus ac leo ornare pretium. Suspendisse interdum mollis magna eu volutpat. In ut massa rutrum, elementum odio et, ullamcorper nunc. Vivamus gravida blandit efficitur.
+          </p>
+          <p>
+            Ut id ullamcorper purus. Pellentesque porta, justo quis dignissim facilisis, ligula metus pulvinar risus, at finibus felis lorem pharetra turpis. Quisque malesuada nulla a rutrum commodo. Donec quis tellus non justo fermentum ullamcorper. Aenean suscipit nibh vel sapien lacinia, sed pretium turpis ornare. Vivamus ut arcu sit amet nunc ultricies finibus sit amet sit amet orci. Vestibulum iaculis bibendum condimentum. Fusce blandit augue at sem maximus posuere. Duis id magna et nibh rutrum aliquam. Morbi consequat, ex id sagittis posuere, felis sapien mattis est, at vulputate quam quam sed massa. Phasellus in metus non leo rhoncus bibendum non vel ante.
+          </p>
+          <p>
+            Phasellus ac vulputate dui, et euismod eros. Maecenas mollis pharetra gravida. Donec ultrices, dolor et molestie tristique, lacus nisl condimentum odio, elementum sollicitudin magna nulla pulvinar purus. Mauris convallis est vitae purus tempor faucibus. Pellentesque pulvinar elementum magna, eget tempor neque tristique id. Suspendisse id mattis eros. Ut a dolor sit amet eros dapibus fermentum lobortis a urna. Sed quis leo odio. Nunc id semper magna, nec sagittis turpis. Sed at fermentum tellus, sit amet dignissim ipsum. Vestibulum non commodo tortor. Curabitur id vulputate lorem, quis porttitor lacus. Proin mattis sem et tellus hendrerit varius a at risus. Cras eu magna a magna lobortis euismod. Phasellus ultricies odio nisl, et ultricies mi tempor eu. Integer pharetra facilisis mi quis lobortis.
+          </p>
+          <p>
+            Phasellus quis sollicitudin tellus, nec hendrerit erat. Curabitur mi est, imperdiet vel elementum a, vestibulum eget mi. Pellentesque vitae sem eu augue commodo tempus viverra nec erat. Quisque ullamcorper sem vel vehicula sodales. Proin cursus placerat ex sit amet maximus. Phasellus non condimentum ante. Nunc accumsan in felis et auctor.
+          </p>
+          <p>
+            Nulla ut ante a elit sollicitudin mollis. Maecenas vel mollis odio. Morbi varius lectus ante, quis scelerisque ligula eleifend eu. Suspendisse sit amet condimentum sem, vulputate congue lectus. Nunc eu eros tristique, sollicitudin nulla hendrerit, vestibulum lorem. Vestibulum urna augue, elementum ac eros ac, ornare feugiat libero. Ut dapibus pulvinar eros nec sagittis. Phasellus bibendum vitae quam at finibus. Quisque a lacus arcu. Duis sed aliquet lorem, et porta dui. Vestibulum sit amet justo in leo consectetur vulputate at sed massa. Nulla id purus velit. Donec sit amet cursus ipsum. Quisque lectus magna, sagittis nec risus vel, cursus pretium ex. Nunc commodo bibendum urna vitae gravida.
+          </p>
+          <p>
+            Curabitur sagittis tellus nunc. Duis nec scelerisque elit. Morbi blandit felis a nunc luctus hendrerit. Maecenas vitae tristique est. Quisque congue sed massa elementum dapibus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus venenatis mollis tortor accumsan lobortis. Etiam dignissim nunc nisl, in hendrerit leo rhoncus eu.
+          </p>
+          <p>
+            Integer sit amet sapien id metus accumsan tristique. Integer sed risus sapien. Nulla quam nibh, vehicula pulvinar tempus sed, tristique et est. Mauris viverra orci nec ante ullamcorper mollis. Integer pretium fringilla placerat. Proin id finibus lorem. Pellentesque condimentum libero a risus ultricies volutpat. Phasellus tristique elit eget lectus imperdiet, non suscipit lorem condimentum. Fusce quam massa, blandit quis sapien id, pretium efficitur enim. Vestibulum vehicula ornare suscipit. Praesent diam magna, vulputate et mi et, sagittis scelerisque lorem. Cras efficitur finibus nulla, nec aliquet libero iaculis ac. Vestibulum sit amet arcu ac odio feugiat vehicula. Pellentesque malesuada interdum purus quis accumsan. Vivamus bibendum tristique tellus sit amet cursus.
+          </p>
+          <p>
+            Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi vel neque laoreet sapien consectetur tincidunt. Vivamus pretium pulvinar metus, at ullamcorper justo. Morbi purus massa, lobortis et blandit rutrum, bibendum a quam. Nulla a massa ligula. Sed placerat at risus vitae vulputate. Vestibulum non posuere sem, vitae tristique justo. Etiam quis varius enim. Suspendisse accumsan, arcu eget vehicula vestibulum, leo mi dapibus magna, viverra condimentum magna odio sit amet magna. Nam sed enim nibh. Nam sodales, eros a ultrices congue, turpis nulla volutpat enim, id tristique libero quam eu eros.
+          </p>
+        </div>
+      </div>
+    </div>
+    
+    <script>
+      $(document).ready(function () {
+        var stickyElement = $('#sticky');
+        var stickyPosition = document.getElementById('sticky').offsetTop;
+        
+        $(document).scroll(function () {
+          var documentScrolledValue = window.pageYOffset;
+          
+          (documentScrolledValue > stickyPosition) ? stickyElement.addClass('sticky') : stickyElement.removeClass('sticky');
+        });
+      });
+    </script>
+  </body>
+</html>
