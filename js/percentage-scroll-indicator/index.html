@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Percentage Scroll Indicator</title>
+  
+    <style>
+      html,
+      body {
+        padding: 0;
+        margin: 0;
+      }
+      
+      #content {
+        max-width: 500px;
+        margin: 0 auto;
+      }
+      
+      #scroll-indicator {
+        position: fixed;
+        top: 0;
+        width: 100vw;
+      }
+      
+      #scroll-indicator div {
+        width: 0;
+        height: 4px;
+        background: #0064cb;
+        transition: width 0.5s ease-in-out;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="scroll-indicator">
+      <div></div>
+    </div>
+    <div id="content">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In turpis leo, aliquam in justo feugiat, fermentum semper turpis. Nulla at risus felis. Duis in maximus tellus. Nulla ac ultricies sapien. Proin ultrices, lectus vel convallis lobortis, diam odio viverra dui, ut consectetur quam massa id erat. Maecenas cursus dui sit amet ultrices finibus. Proin viverra, velit non iaculis fermentum, elit libero euismod odio, in semper eros dui id ligula. Fusce justo turpis, bibendum condimentum lorem eget, semper vulputate quam. Sed lacinia urna augue, nec maximus tellus hendrerit sollicitudin. Praesent vel nulla id lacus ullamcorper feugiat id in velit. Fusce ornare consequat consectetur. Etiam dignissim vestibulum justo, maximus facilisis neque pretium id. Aenean pretium turpis vel quam tristique, feugiat pulvinar lacus porta. Etiam commodo ornare purus molestie consectetur. Sed rhoncus porta magna non sodales.
+      </p>
+      <p>
+        Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam lectus elit, scelerisque sed libero id, condimentum auctor est. Quisque non ante rhoncus, pretium odio eu, placerat odio. Nunc mattis egestas lectus eu feugiat. Suspendisse ac sapien semper, accumsan metus nec, aliquam odio. Ut porttitor pellentesque risus, sit amet efficitur nisi. Vivamus in elementum libero, sed luctus lacus. Etiam a iaculis ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse ante diam, placerat eget felis id, malesuada lobortis neque. Vestibulum pharetra felis nec lacus interdum consequat.
+      </p>
+      <p>
+        Phasellus semper ac ante id ullamcorper. Pellentesque at semper erat, a fringilla ligula. Etiam arcu lorem, congue at hendrerit sed, tincidunt id tortor. Proin varius, ex eget pharetra hendrerit, arcu neque ornare odio, eget convallis odio tortor quis nisi. Vestibulum erat ante, vehicula ut nisl ac, semper egestas sapien. Duis vel quam sit amet lectus ullamcorper ullamcorper eu ut nisi. Quisque nec dictum massa. Vivamus lacinia quis justo vitae rhoncus. Duis nec velit fringilla, consequat justo eget, mattis leo. Ut vitae arcu mi.
+      </p>
+      <p>
+        Nam egestas ut turpis nec finibus. Vestibulum nunc est, mollis sit amet ante quis, aliquet ultricies massa. Sed gravida tincidunt arcu ut semper. Praesent nulla diam, elementum id pharetra at, blandit vitae felis. Ut varius, est quis imperdiet laoreet, eros sem semper mauris, sit amet efficitur nisl tellus at neque. Aenean euismod tristique congue. Nullam commodo quam nisl, in consectetur ligula interdum sit amet. Nam et sapien non mauris rutrum facilisis.
+      </p>
+      <p>
+        Proin placerat viverra sagittis. Morbi sed consectetur ipsum. Vestibulum vel libero blandit, mollis nulla vehicula, consequat nulla. Fusce sed est vel erat auctor hendrerit nec ac justo. Suspendisse commodo sem sed turpis molestie molestie. Mauris volutpat nulla non commodo fermentum. Etiam eu magna nec magna facilisis mollis vitae quis est. Donec auctor eget nulla id vehicula. Aliquam vulputate enim at imperdiet dignissim. Etiam elementum risus quis dignissim pellentesque. In a ipsum facilisis, sodales tellus vitae, maximus urna. Proin ornare eget sem ut fermentum. Vivamus feugiat tellus at finibus venenatis. In viverra vestibulum eros sed rhoncus.
+      </p>
+      <p>
+        Phasellus semper ac ante id ullamcorper. Pellentesque at semper erat, a fringilla ligula. Etiam arcu lorem, congue at hendrerit sed, tincidunt id tortor. Proin varius, ex eget pharetra hendrerit, arcu neque ornare odio, eget convallis odio tortor quis nisi. Vestibulum erat ante, vehicula ut nisl ac, semper egestas sapien. Duis vel quam sit amet lectus ullamcorper ullamcorper eu ut nisi. Quisque nec dictum massa. Vivamus lacinia quis justo vitae rhoncus. Duis nec velit fringilla, consequat justo eget, mattis leo. Ut vitae arcu mi.
+      </p>
+      <p>
+        Nam egestas ut turpis nec finibus. Vestibulum nunc est, mollis sit amet ante quis, aliquet ultricies massa. Sed gravida tincidunt arcu ut semper. Praesent nulla diam, elementum id pharetra at, blandit vitae felis. Ut varius, est quis imperdiet laoreet, eros sem semper mauris, sit amet efficitur nisl tellus at neque. Aenean euismod tristique congue. Nullam commodo quam nisl, in consectetur ligula interdum sit amet. Nam et sapien non mauris rutrum facilisis.
+      </p>
+    </div>
+    <script>
+      var indicator = document.querySelector('#scroll-indicator div');
+      
+      document.addEventListener('scroll', function () {
+        var winScroll = document.documentElement.scrollTop;
+        var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        var scrolled = (winScroll / height) * 100;
+        
+        indicator.style.width = scrolled + '%';
+      });
+    </script>
+  </body>
+</html>
