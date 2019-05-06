@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Object Deconstruction</title>
+  </head>
+  <body>
+    See exercise in console.
+  
+    <script>
+      var subElement = {
+        subOne: '',
+        subTwo: '',
+        subThree: {
+          subSubOne: ''
+        }
+      };
+      
+      var element = {
+        one: '',
+        ...subElement, // Deconstruction
+        three: ''
+      };
+      
+      console.dir(element);
+    </script>
+  </body>
+</html>
