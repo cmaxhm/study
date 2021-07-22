@@ -2,7 +2,7 @@ const form = document.getElementById('form');
 const fileInput = document.getElementById('input');
 const imagesContainer = document.getElementById('images');
 
-form.addEventListener('submit', event => {
+form.addEventListener('change', event => {
   event.preventDefault();
   
   imagesContainer.innerHTML = '';
